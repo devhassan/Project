@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/T"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/T"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TT"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@+id/TTT"/>
+
+        <TextView
+            android:id="@+id/TTt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tt"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TTTt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TTt"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

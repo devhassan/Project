@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BloodBank">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Bank Contact"
+        android:textSize="40dp" />
+
+    <ScrollView
+        android:id="@+id/far"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="-54dp">
+
+        <ImageView
+            android:id="@+id/bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bloodbank" />
+    </ScrollView>
+
+
+</RelativeLayout>

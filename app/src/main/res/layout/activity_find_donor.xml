@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FindDonor">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/box"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Select Blood Group"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <Button
+            android:id="@+id/A_P"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="30dp"
+            android:text="A+" />
+
+        <Button
+            android:id="@+id/B_P"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/A_P"
+            android:layout_alignParentLeft="true"
+            android:text="B+" />
+
+        <Button
+            android:id="@+id/AB_P"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/B_P"
+            android:layout_alignParentLeft="true"
+            android:text="AB+" />
+
+        <Button
+            android:id="@+id/O_P"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/AB_P"
+            android:layout_alignParentLeft="true"
+            android:text="O+" />
+
+        <Button
+            android:id="@+id/A_N"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:text="A-" />
+
+        <Button
+            android:id="@+id/B_N"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/A_N"
+            android:layout_alignParentRight="true"
+            android:text="B-" />
+
+        <Button
+            android:id="@+id/AB_N"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/B_N"
+            android:layout_alignParentRight="true"
+            android:text="AB-" />
+
+        <Button
+            android:id="@+id/O_N"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/AB_N"
+            android:layout_alignParentRight="true"
+            android:text="O-" />
+    </RelativeLayout>
+
+</RelativeLayout>

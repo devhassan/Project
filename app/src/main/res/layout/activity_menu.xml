@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawlayout"
+    tools:context=".Activity.MenuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/blood"
+    >
+
+
+    <Button
+        android:id="@+id/user_profile_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginBottom="-170dp"
+        android:background="@drawable/buttonshape"
+        android:layout_centerInParent="true"
+
+        android:text="Add Donor"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/reminder_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/user_profile_btn"
+
+
+        android:background="@drawable/buttonshape"
+        android:text="Reminder"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/blood_Req_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/buttonshape"
+        android:layout_above="@+id/user_profile_btn"
+        android:layout_alignParentRight="true"
+        android:text="Add Request"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/req_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/buttonshape"
+        android:text="Blood Request"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:layout_below="@+id/reminder_btn"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/help_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+
+        android:layout_below="@id/user_profile_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/buttonshape"
+        android:text="Help"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/find_Donor_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/user_profile_btn"
+        android:layout_marginBottom="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonshape"
+        android:text="Find Donor"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/blood_bank_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/buttonshape"
+        android:text="Blood banks"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/blood_Req_btn"/>
+
+
+</RelativeLayout>

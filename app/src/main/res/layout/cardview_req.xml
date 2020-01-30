@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="#E2DCE3"
+        android:layout_margin="8dp"
+        android:outlineAmbientShadowColor="@color/White"
+        app:cardUseCompatPadding="true"
+
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/name_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:background="#9C9C9C"/>
+
+                    <TextView
+                        android:id="@+id/city_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="city_req"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/number_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="number_req"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#9C9C9C"/>
+                    <TextView
+                        android:id="@+id/blood_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="blood_req"
+                        android:textSize="18sp" />
+                    <TextView
+                    android:id="@+id/hosiptal_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="hospital_req"
+                        android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                        android:background="#9C9C9C"/>
+
+                    <TextView
+                        android:id="@+id/massage_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="massage_req"
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:gravity="center"
+                    android:background="#9C9C9C">
+
+                    <TextView
+                        android:id="@+id/B_Group_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B+"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

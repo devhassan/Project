@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BloodGroupActivity"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#228B22"
+        android:text="ADD BLOOD REQUEST" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/top"
+        android:textColor="#ff0000"
+        android:text="*Fill correct information" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Mobile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Mobile1"
+        android:entries="@array/Blood_Group" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Of Blood Bags"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/city1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bag1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="textPostalAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/HospitalName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/HospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HospitalName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Massage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HospitalName1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Massage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Leave your Massage here" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Massage1"
+        android:text="Button"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/button"/>
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AuthActivity"
+    android:background="@drawable/blood">
+
+
+<RelativeLayout
+    android:id="@+id/box1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/box"
+    android:paddingBottom="40dp"
+    >
+    <TextView
+        android:id="@+id/bloodtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood "
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodtext"
+        android:layout_centerHorizontal="true"
+        android:text="Donation "
+        android:textSize="40dp" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordbox"
+            android:layout_below="@+id/email"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:ems="10"
+
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordbox"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/conform_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Conform Password"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/box"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="Submit"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+</RelativeLayout>
